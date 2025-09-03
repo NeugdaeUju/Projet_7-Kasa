@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Header from './components/components_allPages/Header.jsx'
 import PageError from './components/pages/PageError.jsx'
 import Apropos from './components/pages/Apropos.jsx'
@@ -11,9 +11,6 @@ const router = createBrowserRouter ([
     path : '/',
     element : <>
       <Header />
-      <div>
-        <Outlet />
-      </div>
       <Footer />
     </>,
     errorElement : <PageError/>,
