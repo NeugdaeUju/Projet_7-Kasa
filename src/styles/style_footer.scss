@@ -1,19 +1,4 @@
-// Général
-* {
-    font-family: 'Montserrat';
-    margin: 0;
-    padding : 0;
-}
-p {
-    font-family: 'Montserrat';
-}
-    // Colors
-    $primary-color : #FF6060;
-
-    // Fonts
-    $Header-weight : 500;
-    $Header-size : 24px;
-    
+@import 'style.scss';
 
 footer {
     display : flex;

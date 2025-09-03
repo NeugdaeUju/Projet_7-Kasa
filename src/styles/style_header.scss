@@ -1,0 +1,19 @@
+@import 'style.scss';
+
+header {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin : 45px 100px;
+}
+
+header img {
+    height : 68px;
+}
+
+header a {
+    padding-left : 57px;
+    font-size : $Header-size;
+    font-weight: $Header-weight;
+}
