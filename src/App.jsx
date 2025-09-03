@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Root from './Root.jsx'
 import PageError from './PageError.jsx'
+import LogementPage from "./LogementPage.jsx"
 
 const router = createBrowserRouter ([
   {
@@ -10,7 +11,12 @@ const router = createBrowserRouter ([
     children : [{
       path : 'a-propos',
       element : <div>Page A Propos</div>
-    }]
+    },
+    {
+      path : ':id',
+      element : <LogementPage/>
+    },
+  ]
   }
 ])
 
