@@ -8,5 +8,6 @@ import './style.scss'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <Footer />
   </StrictMode>,
 )
