@@ -13,7 +13,22 @@ header img {
 }
 
 header a {
-    padding-left : 57px;
+    margin-left : 57px;
     font-size : $Header-size;
     font-weight: $Header-weight;
+}
+
+@media (max-width : 480px) {
+    header {
+        margin: 20px;
+    }
+    header img{
+        height : 46px;
+    }
+
+    header a {
+        font-size : $Header-size-mobile;
+        font-weight: $Header-weight-mobile;
+        margin-left : 26px;
+    }
 }

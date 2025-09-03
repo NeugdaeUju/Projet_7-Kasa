@@ -23,7 +23,21 @@ header img {
 }
 
 header a {
-  padding-left: 57px;
+  margin-left: 57px;
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  header {
+    margin: 20px;
+  }
+  header img {
+    height: 46px;
+  }
+  header a {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 26px;
+  }
 }/*# sourceMappingURL=style_header.css.map */
