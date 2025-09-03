@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Root from './Root.jsx'
-import PageError from './PageError.jsx'
-import LogementPage from "./LogementPage.jsx"
+import PageError from './pages/PageError.jsx'
+import LogementPage from "./pages/LogementPage.jsx"
 
 const router = createBrowserRouter ([
   {
