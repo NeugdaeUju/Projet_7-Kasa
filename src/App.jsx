@@ -1,16 +1,25 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import Root from './Root.jsx'
-import PageError from './pages/PageError.jsx'
-import LogementPage from "./pages/LogementPage.jsx"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
+import Header from './components/components_allPages/Header.jsx'
+import PageError from './components/pages/PageError.jsx'
+import Apropos from './components/pages/Apropos.jsx'
+import LogementPage from "./components/pages/LogementPage.jsx"
+import Footer from './components/components_allPages/Footer.jsx'
+
 
 const router = createBrowserRouter ([
   {
     path : '/',
-    element : <Root/>,
+    element : <>
+      <Header />
+      <div>
+        <Outlet />
+      </div>
+      <Footer />
+    </>,
     errorElement : <PageError/>,
     children : [{
       path : 'a-propos',
-      element : <div>Page A Propos</div>
+      element : <div><Apropos/></div>
     },
     {
       path : ':id',
