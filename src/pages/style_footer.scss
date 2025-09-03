@@ -1,0 +1,37 @@
+// Général
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding : 0;
+}
+p {
+    font-family: 'Montserrat';
+}
+    // Colors
+    $primary-color : #FF6060;
+
+    // Fonts
+    $Header-weight : 500;
+    $Header-size : 24px;
+    
+
+footer {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color : white;
+    /*height : 210px;*/
+}
+
+footer img {
+    padding-bottom : 29px;
+    padding-top : 66px;
+}
+
+footer p {
+    font-size: $Header-size;
+    font-weight: $Header-weight;
+    padding-bottom : 29px;
+}
