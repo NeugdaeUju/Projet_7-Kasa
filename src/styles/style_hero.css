@@ -17,6 +17,7 @@ a {
   align-items: center;
   margin: 5px 100px 43px 100px;
   height: 223px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero img {
