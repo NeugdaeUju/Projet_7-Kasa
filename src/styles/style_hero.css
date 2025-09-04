@@ -15,10 +15,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 100px;
 }
 
 .hero img {
-  width: 90%;
+  width: 100%;
   padding: 0 100px;
   position: relative;
   margin-top: 5px;

@@ -1,0 +1,11 @@
+@import './style.scss';
+
+.logements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $grey;
+    border-radius: 16px;
+    padding : 50px;
+    margin : 0 100px 50px 100px;
+}
