@@ -15,15 +15,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 100px;
+  margin: 5px 100px 43px 100px;
+  height: 223px;
 }
 
 .hero img {
   width: 100%;
-  padding: 0 100px;
-  position: relative;
-  margin-top: 5px;
-  margin-bottom: 43px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  filter: brightness(50%);
+  border-radius: 16px;
 }
 
 .hero p {
@@ -31,5 +33,4 @@ a {
   font-size: 48px;
   font-weight: 700;
   color: white;
-  top: 253px;
 }/*# sourceMappingURL=style_hero.css.map */
