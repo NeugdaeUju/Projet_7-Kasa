@@ -1,11 +1,19 @@
 import '../../../styles/style_accueil_logement.css'
+import Logement from './Logements.jsx'
 
-function Logement () {
+function AllLogement () {
     return <>
         <div className="logements">
-            <p>Voici les logments proposés</p>
+            <div className="logements__grid">
+                <Logement/>
+                <Logement/>
+                <Logement/>
+                <Logement/>
+                <Logement/>
+                <Logement/>
+            </div>
         </div>
     </>
 }
 
-export default Logement
+export default AllLogement

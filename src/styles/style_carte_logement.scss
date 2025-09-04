@@ -1,0 +1,18 @@
+@import 'style.scss';
+
+.logement {
+    height : 340px;
+    width : 340px;
+    border-radius : 16px;
+    background-color : $primary-color;
+    position : relative;
+}
+
+.logement p {
+    font-size : $Logement-pages-log-size;
+    font-weight: $Logement-pages-loc-weight;
+    color : $white;
+    position : relative;
+    top : 290px;
+    left : 20px;
+}
