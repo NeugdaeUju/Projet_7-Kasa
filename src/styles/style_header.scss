@@ -1,0 +1,34 @@
+@import 'style.scss';
+
+header {
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin : 45px 100px;
+}
+
+header img {
+    height : 68px;
+}
+
+header a {
+    margin-left : 57px;
+    font-size : $Header-size;
+    font-weight: $Header-weight;
+}
+
+@media (max-width : 480px) {
+    header {
+        margin: 20px;
+    }
+    header img{
+        height : 46px;
+    }
+
+    header a {
+        font-size : $Header-size-mobile;
+        font-weight: $Header-weight-mobile;
+        margin-left : 26px;
+    }
+}

@@ -1,0 +1,61 @@
+//Général (devices : desktop)
+    // Colors
+    $primary-color : #FF6060;
+    $black : black;
+    $white : white;
+
+
+    // Fonts
+    $Header-weight : 500;
+    $Header-size : 24px;
+    $Title-weight : 700;
+    $Title-size : 48px;
+    $LogementTitle-weight: 700;
+    $LogementTitle-size: 18px; 
+
+    //Fonts Logement Page
+    $Logement-pages-Title-weight : 500;
+    $Logement-pages-Title-size : 36px;
+    $Logement-pages-loc-weight: 500;
+    $Logement-pages-log-size: 18px;
+    $Logement-pages-tag-weight : 500;
+    $Logement-pages-tag-size : 14px;
+    $Logement-pages-OpenList-weight : 700;
+    $Logement-pages-OpenList-size : 24px;
+    $Logement-pages-ContentText-weight : 400;
+    $Logement-pages-ContentText-size : 18px;
+
+
+// Général (devices : mobile)
+
+    // Fonts
+    $Header-weight-mobile : 500;
+    $Header-size-mobile : 12px;
+    $Title-weight-mobile : 700;
+    $Title-size-mobile : 24px;
+
+    //Fonts Logement Page
+    $Logement-pages-Title-weight : 500;
+    $Logement-pages-Title-size : 36px;
+    $Logement-pages-loc-weight: 500;
+    $Logement-pages-log-size: 18px;
+    $Logement-pages-tag-weight : 500;
+    $Logement-pages-tag-size : 14px;
+    $Logement-pages-OpenList-weight : 700;
+    $Logement-pages-OpenList-size : 13px;
+    $Logement-pages-ContentText-weight : 400;
+    $Logement-pages-ContentText-size : 12px;
+
+
+
+// Général (toutes pages / tout devices)
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding : 0;
+}
+a {
+    color : $black;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
