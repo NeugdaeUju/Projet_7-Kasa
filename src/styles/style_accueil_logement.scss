@@ -17,6 +17,32 @@
     }
 }
 
+@media (max-width: 834px) {
+    .logements { 
+        margin : 0px 30px;
+        padding : 10px;
+        margin-bottom: 25px;
+        &__grid {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+    }
+}
+
+@media (max-width : 635px) {
+    .logements { 
+        margin : 0px 30px;
+        margin-bottom : 25px;
+        padding : 10px;
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-row-gap: 10px;
+        }
+    }
+}
+
+
 @media (max-width: 480px) {
     .logements {
         background-color: $white;
