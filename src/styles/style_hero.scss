@@ -25,6 +25,23 @@
     color :$white;
 }
 
+@media (max-width: 834px) {
+    .hero { 
+      margin : 0 30px 25px 30px;
+      height : 180px;  
+    }
+
+    .hero p { 
+        font-size : 36px;
+    }
+}
+
+@media (max-width : 635px) {
+    .hero p { 
+        padding-left : 20px;
+    }
+}
+
 @media (max-width: 480px) {
     .hero {
         height : 111px;
