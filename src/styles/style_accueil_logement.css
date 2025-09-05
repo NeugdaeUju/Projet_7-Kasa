@@ -54,6 +54,7 @@ a {
     background-color: white;
     padding: 0;
     margin: 0 20px;
+    margin-bottom: 22px;
   }
   .logements__grid {
     grid-template-columns: 1fr;
