@@ -41,13 +41,13 @@ a {
     height: 111px;
     margin: 0 20px;
     margin-bottom: 22px;
+    align-items: start;
   }
   .hero p {
     font-size: 24px;
     font-weight: 700;
     display: flex;
     justify-content: center;
-    align-items: start;
     padding-left: 16px;
   }
 }/*# sourceMappingURL=style_hero.css.map */
