@@ -11,18 +11,24 @@ a {
 }
 
 .logement {
-  height: 340px;
-  width: 340px;
-  border-radius: 16px;
-  background-color: #FF6060;
+  width: 100%;
   position: relative;
+  aspect-ratio: 1/1;
+}
+.logement__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
 }
 
 .logement p {
   font-size: 18px;
   font-weight: 500;
   color: white;
-  position: relative;
-  top: 290px;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
   left: 20px;
 }/*# sourceMappingURL=style_carte_logement.css.map */

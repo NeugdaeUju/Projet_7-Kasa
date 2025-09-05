@@ -1,10 +1,11 @@
 import '../../../styles/style_carte_logement.css'
 
-function Logement () {
+function Logement ({cover, title}) {
     return <>
-    <div className="logement">
-        <p>Titre du logement</p>
-    </div>
+    <article className="logement">
+        <img src={cover} alt={title} className='logement__image'/>
+        <p>{title}</p>
+    </article>
     </>
 }
 
