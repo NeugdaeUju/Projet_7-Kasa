@@ -2,7 +2,6 @@
 
 .logement {
     width : 100%;
-    // border-radius : 16px;
     position : relative;
     aspect-ratio: 1 /1;
 
@@ -22,4 +21,18 @@
     margin : 20px;
     bottom : 0px;
     left: 0px;
+}
+
+@media (max-width: 480px) {
+    .logement {
+        aspect-ratio: auto;
+
+        &__image {
+            aspect-ratio: auto;
+        }
+    }
+}
+
+.logement p {
+    margin : 15px;
 }

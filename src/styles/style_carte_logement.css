@@ -31,4 +31,16 @@ a {
   margin: 20px;
   bottom: 0px;
   left: 0px;
+}
+
+@media (max-width: 480px) {
+  .logement {
+    aspect-ratio: auto;
+  }
+  .logement__image {
+    aspect-ratio: auto;
+  }
+}
+.logement p {
+  margin: 15px;
 }/*# sourceMappingURL=style_carte_logement.css.map */
