@@ -33,6 +33,16 @@ a {
   left: 0px;
 }
 
+@media (max-width: 635px) {
+  .logement {
+    aspect-ratio: auto;
+    height: 225px;
+  }
+  .logement__image {
+    aspect-ratio: auto;
+    height: 225px;
+  }
+}
 @media (max-width: 480px) {
   .logement {
     aspect-ratio: auto;

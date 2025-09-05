@@ -23,6 +23,18 @@
     left: 0px;
 }
 
+@media (max-width: 635px) {
+    .logement {
+        aspect-ratio: auto;
+        height : 225px;
+
+        &__image {
+            aspect-ratio: auto;
+            height : 225px;
+        }
+    }
+}
+
 @media (max-width: 480px) {
     .logement {
         aspect-ratio: auto;
