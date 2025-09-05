@@ -36,6 +36,14 @@ a {
   color: white;
 }
 
+@media (max-width: 1024px) {
+  .hero {
+    margin: 5px 50px 43px 50px;
+  }
+  .hero p {
+    padding: 20px;
+  }
+}
 @media (max-width: 834px) {
   .hero {
     margin: 0 30px 25px 30px;
