@@ -28,7 +28,7 @@ a {
   font-weight: 500;
   color: white;
   position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 20px;
+  margin: 20px;
+  bottom: 0px;
+  left: 0px;
 }/*# sourceMappingURL=style_carte_logement.css.map */
