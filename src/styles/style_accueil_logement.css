@@ -24,4 +24,16 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 60px;
   grid-row-gap: 50px;
+}
+
+@media (max-width: 480px) {
+  .logements {
+    background-color: white;
+    padding: 0;
+    margin: 0 20px;
+  }
+  .logements__grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
 }/*# sourceMappingURL=style_accueil_logement.css.map */
