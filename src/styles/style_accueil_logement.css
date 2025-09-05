@@ -26,6 +26,13 @@ a {
   grid-row-gap: 50px;
 }
 
+@media (max-width: 1024px) {
+  .logements {
+    margin: 0px 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 834px) {
   .logements {
     margin: 0px 30px;
