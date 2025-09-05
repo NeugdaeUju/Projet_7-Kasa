@@ -1,4 +1,4 @@
-@import './style.scss';
+@import 'style.scss';
 
 .hero {
     display : flex;
@@ -23,4 +23,21 @@
     font-size: $Title-size;
     font-weight : $Title-weight;
     color :$white;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height : 111px;
+        margin : 0 20px;
+        margin-bottom: 22px;
+    }
+
+    .hero p {
+        font-size: $Title-size-mobile;
+        font-weight : $Title-weight-mobile;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding-left : 16px;
+    }
 }

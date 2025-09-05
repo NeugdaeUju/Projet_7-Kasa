@@ -34,4 +34,20 @@ a {
   font-size: 48px;
   font-weight: 700;
   color: white;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 111px;
+    margin: 0 20px;
+    margin-bottom: 22px;
+  }
+  .hero p {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=style_hero.css.map */
