@@ -18,6 +18,12 @@ header a {
     font-weight: $Header-weight;
 }
 
+@media (max-width : 1024px) {
+    header {
+        margin : 45px 50px;
+    }
+}
+
 @media (max-width: 834px) {
     header {
         margin : 20px;
