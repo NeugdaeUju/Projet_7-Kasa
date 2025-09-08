@@ -17,6 +17,11 @@ a {
   margin: 38px 210px;
 }
 
+@media (max-width: 1024px) {
+  .valeurs {
+    margin: 30px 50px;
+  }
+}
 @media (max-width: 834px) {
   .valeurs {
     margin: 20px 30px;
