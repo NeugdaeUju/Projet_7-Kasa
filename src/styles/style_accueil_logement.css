@@ -32,6 +32,10 @@ a {
     padding: 20px;
     margin-bottom: 50px;
   }
+  .logements__grid {
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
 }
 @media (max-width: 834px) {
   .logements {
