@@ -28,6 +28,20 @@ header a {
   font-weight: 500;
 }
 
+@media (max-width: 1024px) {
+  header {
+    margin: 45px 50px;
+  }
+}
+@media (max-width: 834px) {
+  header {
+    margin: 20px;
+  }
+  header a {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+}
 @media (max-width: 480px) {
   header {
     margin: 20px;
@@ -38,6 +52,6 @@ header a {
   header a {
     font-size: 12px;
     font-weight: 500;
-    margin-left: 26px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=style_header.css.map */

@@ -1,0 +1,56 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.logement {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+.logement__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 16px;
+}
+
+.logement p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  margin: 20px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media (max-width: 635px) {
+  .logement {
+    aspect-ratio: auto;
+    height: 225px;
+  }
+  .logement__image {
+    aspect-ratio: auto;
+    height: 225px;
+  }
+}
+@media (max-width: 480px) {
+  .logement {
+    aspect-ratio: auto;
+  }
+  .logement__image {
+    aspect-ratio: auto;
+  }
+}
+.logement p {
+  margin: 15px;
+}/*# sourceMappingURL=style_carte_logement.css.map */

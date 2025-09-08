@@ -1,0 +1,18 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.logements {
+  width: 90%;
+  background-color: #F6F6F6;
+  border-radius: 16px;
+  margin: 0 100px;
+}/*# sourceMappingURL=style_accueilLogement.css.map */

@@ -18,6 +18,23 @@ header a {
     font-weight: $Header-weight;
 }
 
+@media (max-width : 1024px) {
+    header {
+        margin : 45px 50px;
+    }
+}
+
+@media (max-width: 834px) {
+    header {
+        margin : 20px;
+    }
+
+    header a {
+        font-size : 18px;
+        margin-left : 20px;
+    }
+}
+
 @media (max-width : 480px) {
     header {
         margin: 20px;
@@ -29,6 +46,6 @@ header a {
     header a {
         font-size : $Header-size-mobile;
         font-weight: $Header-weight-mobile;
-        margin-left : 26px;
+        margin-left : 10px;
     }
 }
