@@ -9,4 +9,20 @@ function Dropdown ({title, content}) {
     </div>
 }
 
+/*
+    const details = document.querySelectro(".dropdown__button");
+    details.forEach((dropdown) => {
+        dropdown.addEventListener("click", () => {
+            const p = dropdown.querySelector(".dropdown__button__text");
+            if (dropdown.open) {
+                p.classList.add("dropdown__button__text--open");
+                p.classList.remove("dropdown__button__text--close");
+            } else {
+                p.classList.add("dropdown__button__text--close");
+                p.classList.remove("dropdown__button__text--open");
+            }
+        });
+    });
+*/
+
 export default Dropdown

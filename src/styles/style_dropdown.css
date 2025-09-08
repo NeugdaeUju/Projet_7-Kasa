@@ -21,12 +21,44 @@ a {
   color: white;
   font-size: 13px;
   font-weight: 700;
+  z-index: 9999;
+  position: relative;
 }
 .dropdown__button__text {
   background-color: #F6F6F6;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   padding: 10px 20px 10px 15px;
   color: black;
   font-size: 12px;
   font-weight: 400;
-}/*# sourceMappingURL=style_dropdown.css.map */
+}
+
+.dropdown__button[open] .dropdown__button__text {
+  animation: slideDown 0.4s ease forwards;
+}
+
+/*.dropdown__button:not([close]) .dropdown__button__text--close {
+    animation: slideUp 0.4s ease forwards;
+}
+*/
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*@keyframes slideUp {
+    from {
+        transform : translateY(0);
+        opacity : 1;
+    }
+    to {
+        transform : translateY(-10px);
+        opacity : 0;
+    }
+}*//*# sourceMappingURL=style_dropdown.css.map */

@@ -12,11 +12,14 @@
             color: white;  
             font-size: $Logement-pages-OpenList-size;
             font-weight: $Logement-pages-OpenList-weight;
+            z-index : 9999;
+            position : relative;
         }
 
         &__text {
             background-color: $grey;
-            border-radius : 5px;
+            border-bottom-left-radius : 5px;
+            border-bottom-right-radius : 5px;
             padding : 10px 20px 10px 15px;
             color: $black;  
             font-size: $Logement-pages-ContentText-size;
@@ -24,3 +27,34 @@
         }
     }
 }
+
+.dropdown__button[open] .dropdown__button__text {
+    animation: slideDown 0.4s ease forwards;
+}
+
+/*.dropdown__button:not([close]) .dropdown__button__text--close {
+    animation: slideUp 0.4s ease forwards;
+}
+*/
+
+@keyframes slideDown {
+    from {
+        transform : translateY(-10px);
+        opacity : 0;
+    }
+    to {
+        transform : translateY(0);
+        opacity : 1;
+    }
+}
+
+/*@keyframes slideUp {
+    from {
+        transform : translateY(0);
+        opacity : 1;
+    }
+    to {
+        transform : translateY(-10px);
+        opacity : 0;
+    }
+}*/
