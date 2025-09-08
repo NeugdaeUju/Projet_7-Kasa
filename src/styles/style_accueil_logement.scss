@@ -17,6 +17,15 @@
     }
 }
 
+@media (max-width : 1250px) {
+    .logements {
+        &__grid {
+            grid-column-gap: 40px;
+            grid-row-gap: 30px;
+        }
+    }
+}
+
 @media (max-width : 1024px) {
     .logements { 
         margin : 0px 50px;

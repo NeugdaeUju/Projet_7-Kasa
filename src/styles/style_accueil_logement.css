@@ -26,6 +26,12 @@ a {
   grid-row-gap: 50px;
 }
 
+@media (max-width: 1250px) {
+  .logements__grid {
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .logements {
     margin: 0px 50px;
