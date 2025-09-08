@@ -19,7 +19,7 @@ a {
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
   color: white;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 700;
   z-index: 9999;
   position: relative;
@@ -30,7 +30,7 @@ a {
   border-bottom-right-radius: 5px;
   padding: 10px 20px 10px 15px;
   color: black;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -61,4 +61,15 @@ a {
         transform : translateY(-10px);
         opacity : 0;
     }
-}*//*# sourceMappingURL=style_dropdown.css.map */
+}*/
+@media (max-width: 480px) {
+  .dropdown {
+    margin-bottom: 15px;
+  }
+  .dropdown__button__title {
+    font-size: 13px;
+  }
+  .dropdown__button__text {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style_dropdown.css.map */

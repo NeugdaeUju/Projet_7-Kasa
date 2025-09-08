@@ -58,3 +58,19 @@
         opacity : 0;
     }
 }*/
+
+@media (max-width: 480px) {
+    .dropdown {
+        margin-bottom: 15px;
+
+        &__button {
+            &__title {
+                font-size: $Logement-pages-OpenList-size-mobile;
+            }
+
+            &__text {
+                font-size: $Logement-pages-ContentText-size-mobile;
+            }
+        }
+    }
+}
