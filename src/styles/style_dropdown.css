@@ -1,0 +1,32 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.dropdown {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.dropdown__button__title {
+  background-color: #FF6060;
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+.dropdown__button__text {
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  padding: 10px 20px 10px 15px;
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+}/*# sourceMappingURL=style_dropdown.css.map */

@@ -1,0 +1,26 @@
+@import 'style.scss';
+
+.dropdown {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &__button {
+        &__title {
+            background-color: $primary-color;
+            border-radius : 5px;
+            padding : 10px 20px 10px 15px;
+            color: white;  
+            font-size: $Logement-pages-OpenList-size;
+            font-weight: $Logement-pages-OpenList-weight;
+        }
+
+        &__text {
+            background-color: $grey;
+            border-radius : 5px;
+            padding : 10px 20px 10px 15px;
+            color: $black;  
+            font-size: $Logement-pages-ContentText-size;
+            font-weight: $Logement-pages-ContentText-weight;
+        }
+    }
+}
