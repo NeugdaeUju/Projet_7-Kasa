@@ -1,6 +1,6 @@
 ### Projet 7 - Kasa
 
-Ouvrir le projet : dans le terminal taper : npm run dev
+Ouvrir le projet : dans le terminal taper : npm start
 
 # React + Vite
 
