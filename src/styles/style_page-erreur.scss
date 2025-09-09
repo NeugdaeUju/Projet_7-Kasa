@@ -1,2 +1,30 @@
 @import 'style.scss';
 
+.page-erreur {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    margin : 139px 285px;
+
+    &__title {
+        font-size : 288px;
+        font-weight: 700;;
+        color : $primary-color;
+        margin-bottom : 139px;
+    }
+
+    &__text {
+        font-size : 36px;
+        font-weight: 500;
+        color : $primary-color;
+        margin-bottom : 139px;
+    }
+
+    &__link {
+        font-size : $Logement-pages-log-size;
+        font-weight : $Logement-pages-loc-weight;
+        text-decoration: underline;
+    }
+}
