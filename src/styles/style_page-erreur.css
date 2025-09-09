@@ -34,4 +34,21 @@ a {
   font-size: 18px;
   font-weight: 500;
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .page-erreur {
+    margin: 113px 58px;
+  }
+  .page-erreur__title {
+    font-size: 96px;
+    margin-bottom: 113px;
+  }
+  .page-erreur__text {
+    font-size: 18px;
+    margin-bottom: 113px;
+  }
+  .page-erreur__link {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=style_page-erreur.css.map */
