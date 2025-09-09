@@ -34,14 +34,14 @@ a {
   font-weight: 400;
 }
 
-.dropdown__button[open] .dropdown__button__text {
+.dropdown__button[open] .dropdown__button__text--open {
   animation: slideDown 0.4s ease forwards;
 }
 
-/*.dropdown__button:not([close]) .dropdown__button__text--close {
-    animation: slideUp 0.4s ease forwards;
+.dropdown__button:not([close]) .dropdown__button__text--close {
+  animation: slideUp 0.4s ease forwards;
 }
-*/
+
 @keyframes slideDown {
   from {
     transform: translateY(-10px);
@@ -52,16 +52,16 @@ a {
     opacity: 1;
   }
 }
-/*@keyframes slideUp {
-    from {
-        transform : translateY(0);
-        opacity : 1;
-    }
-    to {
-        transform : translateY(-10px);
-        opacity : 0;
-    }
-}*/
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
 @media (max-width: 834px) {
   .dropdown {
     margin-bottom: 20px;
