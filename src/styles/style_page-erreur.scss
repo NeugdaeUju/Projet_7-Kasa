@@ -1,0 +1,88 @@
+@import 'style.scss';
+
+.page-erreur {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    text-align : center;
+    margin : 139px 285px;
+
+    &__title {
+        font-size : 288px;
+        font-weight: 700;;
+        color : $primary-color;
+        margin-bottom : 139px;
+    }
+
+    &__text {
+        font-size : 36px;
+        font-weight: 500;
+        color : $primary-color;
+        margin-bottom : 139px;
+    }
+
+    &__link {
+        font-size : $Logement-pages-log-size;
+        font-weight : $Logement-pages-loc-weight;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width : 1024px) {
+    .page-erreur {
+        margin : 139px 180px;
+
+        &__title {
+            font-size : 230px;
+        }
+
+        &__text {
+            font-size : 32px;
+        }
+
+        &__link {
+            font-size : 16px;
+        }
+    }
+}
+
+@media (max-width : 832px) {
+    .page-erreur {
+        margin : 125px 80px;
+
+        &__title {
+            font-size : 100px;
+            margin-bottom : 125px;
+        }
+
+        &__text {
+            font-size : 22px;
+            margin-bottom : 125px;
+        }
+
+        &__link {
+            font-size : 14px;
+        }
+    }
+}
+
+@media (max-width : 480px) {
+    .page-erreur {
+        margin : 113px 58px;
+
+        &__title {
+            font-size : 96px;
+            margin-bottom : 113px;
+        }
+
+        &__text {
+            font-size : 18px;
+            margin-bottom : 113px;
+        }
+
+        &__link {
+            font-size : 13px;
+        }
+    }
+}
