@@ -5,9 +5,11 @@ import Footer from '../components_allPages/Footer.jsx'
 function PageError () {
     return <>
     <Header />
-    <h1>404</h1>
-    <p>Oups! La page que vous demandez n'existe pas.</p>
-    <Link to='/'>Retourner sur la page d'accueil</Link>
+    <div className='page-erreur'>
+        <h1 className='page-erreur__title'>404</h1>
+        <p className='page-erreur__text'>Oups! La page que vous demandez n'existe pas.</p>
+        <Link to='/' className='page-erreur__link'>Retourner sur la page d'accueil</Link>
+    </div>
     <Footer />
     </>
 }
