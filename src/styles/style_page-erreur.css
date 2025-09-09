@@ -36,6 +36,22 @@ a {
   text-decoration: underline;
 }
 
+@media (max-width: 832px) {
+  .page-erreur {
+    margin: 125px 80px;
+  }
+  .page-erreur__title {
+    font-size: 100px;
+    margin-bottom: 125px;
+  }
+  .page-erreur__text {
+    font-size: 22px;
+    margin-bottom: 125px;
+  }
+  .page-erreur__link {
+    font-size: 14px;
+  }
+}
 @media (max-width: 480px) {
   .page-erreur {
     margin: 113px 58px;
