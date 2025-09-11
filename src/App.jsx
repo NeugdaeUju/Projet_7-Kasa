@@ -18,7 +18,7 @@ const router = createBrowserRouter ([
       element : <div><Apropos/></div>
     },
     {
-      path : '/id',
+      path : ':id',
       element : <LogementPage/>
     },
   ]
@@ -28,6 +28,7 @@ const router = createBrowserRouter ([
 function App() {
   return <>
   <RouterProvider router={router}/>
+  <Accueil />
   </>
 }
 
