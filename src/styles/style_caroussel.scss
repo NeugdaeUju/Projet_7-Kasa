@@ -38,6 +38,31 @@
     }
 }
 
+@media (max-width : 832px) {
+    .caroussel {
+        margin: 20px;
+
+        &-image {
+            height : 280px;
+        }
+
+        &_arrow-left {
+            height : 20px;
+            width : 12px;
+            left : 30px
+        }
+
+        &_arrow-right {
+            height : 20px;
+            width : 12px;
+            right : 30px
+        }
+        &_count {
+            font-size : 14px;;
+        }
+    }
+}
+
 @media (max-width : 480px) {
     .caroussel {
         margin : 0px 20px;

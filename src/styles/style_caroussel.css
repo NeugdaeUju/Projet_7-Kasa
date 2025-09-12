@@ -46,6 +46,27 @@ a {
   font-weight: 400;
 }
 
+@media (max-width: 832px) {
+  .caroussel {
+    margin: 20px;
+  }
+  .caroussel-image {
+    height: 280px;
+  }
+  .caroussel_arrow-left {
+    height: 20px;
+    width: 12px;
+    left: 30px;
+  }
+  .caroussel_arrow-right {
+    height: 20px;
+    width: 12px;
+    right: 30px;
+  }
+  .caroussel_count {
+    font-size: 14px;
+  }
+}
 @media (max-width: 480px) {
   .caroussel {
     margin: 0px 20px;
