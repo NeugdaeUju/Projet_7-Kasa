@@ -31,9 +31,16 @@
         flex-direction: row;
 
         &__rating {
-            color : $primary-color;
             font-size: 24px;
             margin-left: 10px;
+
+            &--filled {
+                color : $primary-color; 
+            }
+
+            &--empty {
+                color : #E3E3E3;
+            }
         }
     }
 }

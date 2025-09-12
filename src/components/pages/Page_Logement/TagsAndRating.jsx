@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
-function TagsAndRating ( {tags = []}) {
+function TagsAndRating ( {tags = [], rating = 0}) {
     return <>
         <div className='tags-and-rating'>
             <div className='tags-and-rating__tags-div'>
@@ -14,11 +14,16 @@ function TagsAndRating ( {tags = []}) {
                 ))}
             </div>
             <div className ='tags-and-rating__rating-div'>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
+                {[...Array(5)].map((star, i) => (
+                     <FontAwesomeIcon 
+                    key={i}
+                    icon={faStar} 
+                    className ={
+                        'tags-and-rating__rating-div__rating ' +
+                        (i < rating ? 'tags-and-rating__rating-div__rating--filled' : 'tags-and-rating__rating-div__rating--empty' )}
+                    />
+                ))}
+               
             </div>
         </div>
     </>
