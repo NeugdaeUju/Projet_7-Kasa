@@ -11,8 +11,8 @@
         flex-direction: row;
 
         &__tag {
-            width: 115px;
-            height : 25px;
+            width: 100%;
+            padding : 3px 22px;
             font-size: $Logement-pages-tag-size;
             font-weight: $Logement-pages-tag-weight;
             color : $white;
@@ -22,6 +22,7 @@
             justify-content: center;
             align-items: center;
             margin-right:  10px;
+            white-space: nowrap;
         }
     }
 
@@ -29,7 +30,7 @@
         display : flex;
         flex-direction: row;
 
-        &__tag {
+        &__rating {
             color : $primary-color;
             font-size: 24px;
             margin-left: 10px;

@@ -21,8 +21,8 @@ a {
   flex-direction: row;
 }
 .tags-and-rating__tags-div__tag {
-  width: 115px;
-  height: 25px;
+  width: 100%;
+  padding: 3px 22px;
   font-size: 14px;
   font-weight: 500;
   color: white;
@@ -32,12 +32,13 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  white-space: nowrap;
 }
 .tags-and-rating__rating-div {
   display: flex;
   flex-direction: row;
 }
-.tags-and-rating__rating-div__tag {
+.tags-and-rating__rating-div__rating {
   color: #FF6060;
   font-size: 24px;
   margin-left: 10px;

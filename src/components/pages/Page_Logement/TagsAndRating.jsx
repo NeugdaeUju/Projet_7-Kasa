@@ -14,11 +14,11 @@ function TagsAndRating ( {tags = []}) {
                 ))}
             </div>
             <div className ='tags-and-rating__rating-div'>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
-                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
+                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
+                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
+                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
+                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
+                <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__rating'/>
             </div>
         </div>
     </>
