@@ -4,8 +4,22 @@
     margin : 24px 100px 50px 100px;
   display: flex;
   justify-content: space-between;
+
+  &__items {
+    list-style-type : none;
+    font-size : $Logement-pages-ContentText-size;
+    font-weight : $Logement-pages-ContentText-weight;
+  }
 }
 
 .dropdown {
     width: 48%;
+
+    &__button {
+      &__text {
+        font-size : $Logement-pages-ContentText-size;
+        font-weight : $Logement-pages-ContentText-weight;
+        padding : 20px 16px 20px 16px;
+      }
+    }
 }

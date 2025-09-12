@@ -15,7 +15,17 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.description-equipements__items {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 400;
+}
 
 .dropdown {
   width: 48%;
+}
+.dropdown__button__text {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 16px 20px 16px;
 }/*# sourceMappingURL=style_description-equipements.css.map */
