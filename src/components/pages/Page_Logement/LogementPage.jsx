@@ -11,7 +11,8 @@ function LogementPage () {
     const logement = data.find(logement => logement.id === id)
 
     return <>
-    <Caroussel/>
+    <Caroussel
+    pictures={logement.pictures}/>
     <TitleAndHost 
         title={logement.title}
         location={logement.location}
