@@ -1,12 +1,13 @@
 import '../../../styles/style_carte_logement.css'
+import { Link } from 'react-router-dom'
 
 function Logement ({cover, title, id}) {
     return <>
     <article className="logement">
-        <a href={`/logement/${id}`}>
-        <img src={cover} alt={title} className='logement__image'/>
-        <p>{title}</p>
-        </a>
+        <Link to={`/logement/${id}`}>
+            <img src={cover} alt={title} className='logement__image'/>
+            <p>{title}</p>
+        </Link>
     </article>
     </>
 }

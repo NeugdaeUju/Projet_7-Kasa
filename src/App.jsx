@@ -4,13 +4,16 @@ import PageError from './components/pages/PageError.jsx'
 import Apropos from './components/pages/Page_Apropos/Apropos.jsx'
 import LogementPage from "./components/pages/LogementPage.jsx"
 import Accueil from './components/pages/Page_Accueils/Accueil.jsx'
+import logementListe from '../src/assets/logements.json'
 
+const id = logementListe.id
 
 const router = createBrowserRouter ([
   {
     path : '/',
     element : <>
       <Header />
+      <Accueil />
     </>,
     errorElement : <PageError/>,
     children : [{
@@ -18,7 +21,7 @@ const router = createBrowserRouter ([
       element : <div><Apropos/></div>
     },
     {
-      path : ':id',
+      path : '/logement/:id',
       element : <LogementPage/>
     },
   ]
@@ -28,7 +31,6 @@ const router = createBrowserRouter ([
 function App() {
   return <>
   <RouterProvider router={router}/>
-  <Accueil />
   </>
 }
 
