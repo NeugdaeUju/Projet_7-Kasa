@@ -1,0 +1,48 @@
+@import './style.scss';
+
+.title-and-host {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin : 30px 100px;
+
+    &__title-div {
+        display :flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            font-size : $Logement-pages-Title-size;
+            font-weight: $Logement-pages-Title-weight;
+            color : $primary-color;
+        }
+
+        &__loc {
+            font-size : $Logement-pages-log-size;
+            font-weight: $Logement-pages-loc-weight;
+        }
+    }
+
+    &__host-div {
+        display :flex;
+        flex-direction: row;
+        align-items: center;
+
+        &__name {
+            font-size:  $Logement-pages-log-size;
+            font-weight: $Logement-pages-loc-weight;
+            color : $primary-color;
+            padding-right : 10px;
+            width : 100px;
+            text-align: right;
+        }
+
+        &__image {
+            height : 64px;
+            width : 64px;
+            object-fit: cover;
+            border-radius: 35px;
+        }
+    }
+}
