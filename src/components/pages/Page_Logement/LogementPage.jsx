@@ -15,7 +15,8 @@ function LogementPage () {
         location={logement.location}
         hostName={logement.host.name}
         hostPicture={logement.host.picture} />
-    <TagsAndRating />
+    <TagsAndRating 
+        tags={logement.tags}/>
     <DescriptionAndEquipements 
         description={logement.description}
         equipements={logement.equipments}/>

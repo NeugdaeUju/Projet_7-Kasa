@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 
-function TagsAndRating () {
+function TagsAndRating ( {tags = []}) {
     return <>
         <div className='tags-and-rating'>
             <div className='tags-and-rating__tags-div'>
-                <p className='tags-and-rating__tags-div__tag'>Tags</p>
-                <p className='tags-and-rating__tags-div__tag'>Tags</p>
-                <p className='tags-and-rating__tags-div__tag'>Tags</p>
+                {tags.map((tag, i) => (
+                    <p key={i} className='tags-and-rating__tags-div__tag'>{tag}</p>
+                ))}
             </div>
             <div className ='tags-and-rating__rating-div'>
                 <FontAwesomeIcon icon={faStar} className ='tags-and-rating__rating-div__tag'/>
