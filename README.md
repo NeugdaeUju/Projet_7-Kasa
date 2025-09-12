@@ -1,6 +1,7 @@
 ### Projet 7 - Kasa
 
 Ouvrir le projet : dans le terminal taper : npm start
+installer la librairie font awesome : npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
 
 # React + Vite
 
