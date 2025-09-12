@@ -44,4 +44,26 @@ a {
   color: white;
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  .caroussel {
+    margin: 0px 20px;
+  }
+  .caroussel-image {
+    height: 255px;
+  }
+  .caroussel_arrow-left {
+    height: 20px;
+    width: 12px;
+    left: 30px;
+  }
+  .caroussel_arrow-right {
+    height: 20px;
+    width: 12px;
+    right: 30px;
+  }
+  .caroussel_count {
+    display: none;
+  }
 }/*# sourceMappingURL=style_caroussel.css.map */

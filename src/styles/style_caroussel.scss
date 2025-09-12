@@ -37,3 +37,29 @@
         font-weight : $Logement-pages-ContentText-weight;
     }
 }
+
+@media (max-width : 480px) {
+    .caroussel {
+        margin : 0px 20px;
+
+        &-image {
+            height : 255px;
+        }
+
+        &_arrow-left {
+            height : 20px;
+            width : 12px;
+            left : 30px
+        }
+
+        &_arrow-right {
+            height : 20px;
+            width : 12px;
+            right : 30px
+        }
+
+        &_count {
+            display : none;
+        }
+    }
+}
