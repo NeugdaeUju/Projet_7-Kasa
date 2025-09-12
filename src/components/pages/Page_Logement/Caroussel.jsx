@@ -1,15 +1,28 @@
 import '../../../styles/style_caroussel.css'
 import arrowLeft from '../../../assets/images/arrow_left.png'
 import arrowRight from '../../../assets/images/arrow_right.png'
+import {useState} from 'react'
 
 function Caroussel({pictures = []}) {
+    // Code sur le caroussel;
+    const [current, setCurrent] = useState(0)
+    const length = pictures.length
+
+    // Variables pour changer d'images au click sur les flèches
+    const togoNext = () => {
+        setCurrent(current === length -1 ? 0 : current + 1)
+    }
+    const togoPrevious = () => {
+        setCurrent(current === 0 ? length -1 : current - 1)
+    }
+
     return <>
         <div className='caroussel'>
-            <img src={arrowLeft} alt='left arrow' className='caroussel_arrow-left'/>
-            <img src={arrowRight} alt='tight arrow' className='caroussel_arrow-tight'/>
-            <img src={pictures[0]} alt="logement" className='caroussel-image'/>
+            <img src={arrowLeft} alt='left arrow' className='caroussel_arrow-left' onClick={togoPrevious}/>
+            <img src={arrowRight} alt='right arrow' className='caroussel_arrow-right'  onClick={togoNext}/>
+            <img src={pictures[current]} alt="logement" className='caroussel-image'/>
             <div className='caroussel_count'>
-                <p>1/5</p>
+                <p>{current + 1}/{length}</p>
             </div>
         </div>
     

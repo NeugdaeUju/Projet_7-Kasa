@@ -3,6 +3,37 @@
 .caroussel {
     margin : 0px 100px;
     display : flex;
+    flex-direction: column;
     justify-content : center;
     align-items : center;
+
+    &-image {
+        height : 415px;
+        object-fit: cover;
+        width : 100%;
+        position : relative;
+        border-radius : 16px;
+        z-index: -1;
+	object-position: center;
+    }
+
+    &_arrow-left {
+        position : absolute;
+        left :125px;
+        cursor : pointer;
+    }
+
+    &_arrow-right {
+        position : absolute;
+        right : 125px;
+        cursor : pointer;
+    }
+
+    &_count {
+        position : relative;
+        bottom : 35px;
+        color: $white;
+        font-size : $Logement-pages-ContentText-size;
+        font-weight : $Logement-pages-ContentText-weight;
+    }
 }

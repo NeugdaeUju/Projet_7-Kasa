@@ -13,6 +13,35 @@ a {
 .caroussel {
   margin: 0px 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.caroussel-image {
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  position: relative;
+  border-radius: 16px;
+  z-index: -1;
+  -o-object-position: center;
+     object-position: center;
+}
+.caroussel_arrow-left {
+  position: absolute;
+  left: 125px;
+  cursor: pointer;
+}
+.caroussel_arrow-right {
+  position: absolute;
+  right: 125px;
+  cursor: pointer;
+}
+.caroussel_count {
+  position: relative;
+  bottom: 35px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }/*# sourceMappingURL=style_caroussel.css.map */
