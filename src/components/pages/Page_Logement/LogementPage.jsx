@@ -4,12 +4,14 @@ import TitleAndHost from './TitleAndHost.jsx'
 import TagsAndRating from './TagsAndRating.jsx'
 import DescriptionAndEquipements from './DescriptionAndEquipement.jsx'
 import Footer from '../../components_allPages/Footer.jsx'
+import Caroussel from './Caroussel.jsx'
 
 function LogementPage () {
     const { id } = useParams()
     const logement = data.find(logement => logement.id === id)
 
     return <>
+    <Caroussel/>
     <TitleAndHost 
         title={logement.title}
         location={logement.location}
