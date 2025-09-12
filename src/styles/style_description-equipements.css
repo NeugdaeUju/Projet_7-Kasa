@@ -1,0 +1,21 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.description-equipements {
+  margin: 24px 100px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  width: 48%;
+}/*# sourceMappingURL=style_description-equipements.css.map */
