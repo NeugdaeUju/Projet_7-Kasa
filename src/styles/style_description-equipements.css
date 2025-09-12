@@ -34,6 +34,20 @@ a {
   font-weight: 400;
 }
 
+@media (max-width: 1024px) {
+  .description-equipements {
+    margin: 25px 50px;
+  }
+  .dropdown__button__title {
+    font-size: 18px;
+  }
+  .dropdown__button__text {
+    font-size: 16px;
+  }
+  .dropdown__button__text li {
+    font-size: 16px;
+  }
+}
 @media (max-width: 832px) {
   .description-equipements {
     margin: 24px 20px 25px 20px;

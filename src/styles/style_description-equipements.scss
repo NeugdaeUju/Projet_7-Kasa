@@ -28,6 +28,28 @@
     }
 }
 
+@media (max-width : 1024px) {
+  .description-equipements {
+    margin : 25px 50px;
+  }
+  
+  .dropdown {
+        &__button__title {
+          font-size : 18px;
+        }
+
+        &__button__text {
+          font-size : 16px;
+        }
+
+        &__button__text li {
+          font-size : 16px;
+        }
+
+    }
+
+}
+
 @media (max-width : 832px) {
   .description-equipements {
         margin : 24px 20px 25px 20px;

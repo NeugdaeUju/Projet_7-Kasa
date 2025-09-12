@@ -95,6 +95,18 @@
     }
 }
 
+@media (max-width : 1024px) {
+    .title-and-host {
+        margin : 20px 50px;
+
+        &__title-div {
+            &__title {
+                font-size : 30px;
+            }
+        }
+    }
+}
+
 @media (max-width : 832px) {
     .title-and-host {
         flex-direction : column;
