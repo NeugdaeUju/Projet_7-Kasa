@@ -1,0 +1,197 @@
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.title-and-host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 100px 20px 100px;
+}
+.title-and-host__title-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-and-host__title-div__title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.title-and-host__title-div__loc {
+  font-size: 18px;
+  font-weight: 500;
+}
+.title-and-host__host-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-and-host__host-div__host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.title-and-host__host-div__host__name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+  padding-right: 10px;
+  width: 100px;
+  text-align: right;
+}
+.title-and-host__host-div__host__image {
+  height: 64px;
+  width: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 35px;
+}
+
+.tags-and-rating__tags-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.tags-and-rating__tags-div__tag {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #FF6060;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.tags-and-rating__rating-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.tags-and-rating__rating-div__rating {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.tags-and-rating__rating-div__rating--filled {
+  color: #FF6060;
+}
+.tags-and-rating__rating-div__rating--empty {
+  color: #E3E3E3;
+}
+
+@media (max-width: 1024px) {
+  .title-and-host {
+    margin: 20px 50px;
+  }
+  .title-and-host__title-div__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 832px) {
+  .title-and-host {
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .title-and-host__title-div {
+    margin-bottom: 10px;
+  }
+  .title-and-host__title-div__title {
+    font-size: 24px;
+  }
+  .title-and-host__title-div__loc {
+    font-size: 16px;
+  }
+  .title-and-host__host-div {
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .title-and-host__host-div__host__name {
+    font-size: 20px;
+    width: 80px;
+  }
+  .title-and-host__host-div__host__image {
+    height: 45px;
+    width: 45px;
+  }
+  .tags-and-rating__tags-div {
+    flex-wrap: wrap;
+  }
+  .tags-and-rating__tags-div__tag {
+    font-size: 12px;
+    width: auto;
+    margin: 10px;
+    margin-left: 0;
+  }
+  .tags-and-rating__rating-div {
+    margin-top: 0px;
+  }
+  .tags-and-rating__rating-div__rating {
+    font-size: 22px;
+    margin-right: 5px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .title-and-host {
+    flex-direction: column;
+    margin: 20px;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .title-and-host__title-div {
+    margin-bottom: 10px;
+  }
+  .title-and-host__title-div__title {
+    font-size: 18px;
+  }
+  .title-and-host__title-div__loc {
+    font-size: 14px;
+  }
+  .title-and-host__host-div {
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  .title-and-host__host-div__host__name {
+    font-size: 12px;
+    width: 80px;
+  }
+  .title-and-host__host-div__host__image {
+    height: 32px;
+    width: 32px;
+  }
+  .tags-and-rating__tags-div {
+    flex-wrap: wrap;
+  }
+  .tags-and-rating__tags-div__tag {
+    font-size: 10px;
+    width: auto;
+    margin: 5px;
+  }
+  .tags-and-rating__rating-div {
+    margin-top: 0px;
+  }
+  .tags-and-rating__rating-div__rating {
+    font-size: 13px;
+    margin-right: 5px;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=style_title-and-host.css.map */

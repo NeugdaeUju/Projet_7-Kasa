@@ -10,6 +10,7 @@ function AllLogement () {
             {logementListe.map((logementListe) => (
                 <Logement 
                 key={logementListe.id}
+                id={logementListe.id}
                 cover={logementListe.cover}
                 title={logementListe.title}/>
             ))}

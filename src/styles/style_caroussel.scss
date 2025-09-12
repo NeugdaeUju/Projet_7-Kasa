@@ -1,0 +1,112 @@
+@import 'style.scss';
+
+.caroussel {
+    margin : 0px 100px;
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+
+    &-image {
+        height : 415px;
+        object-fit: cover;
+        width : 100%;
+        position : relative;
+        border-radius : 16px;
+        z-index: -1;
+	object-position: center;
+    }
+
+    &_arrow-left {
+        position : absolute;
+        left :125px;
+        cursor : pointer;
+    }
+
+    &_arrow-right {
+        position : absolute;
+        right : 125px;
+        cursor : pointer;
+    }
+
+    &_count {
+        position : relative;
+        bottom : 35px;
+        color: $white;
+        font-size : $Logement-pages-ContentText-size;
+        font-weight : $Logement-pages-ContentText-weight;
+    }
+}
+
+@media (max-width : 1024px) {
+    .caroussel {
+        margin : 20px 50px;
+
+        &-image {
+            height : 370px;
+        }
+     &_arrow-left {
+        height : 40px;
+        width : 20px;
+        left : 70px;
+     }
+
+     &_arrow-right {
+        height : 40px;
+        width : 20px;
+        right : 70px;
+     }
+    }
+
+}
+
+@media (max-width : 832px) {
+    .caroussel {
+        margin: 20px;
+
+        &-image {
+            height : 280px;
+        }
+
+        &_arrow-left {
+            height : 20px;
+            width : 12px;
+            left : 30px
+        }
+
+        &_arrow-right {
+            height : 20px;
+            width : 12px;
+            right : 30px
+        }
+        &_count {
+            font-size : 14px;;
+        }
+    }
+}
+
+@media (max-width : 480px) {
+    .caroussel {
+        margin : 0px 20px;
+
+        &-image {
+            height : 255px;
+        }
+
+        &_arrow-left {
+            height : 20px;
+            width : 12px;
+            left : 30px
+        }
+
+        &_arrow-right {
+            height : 20px;
+            width : 12px;
+            right : 30px
+        }
+
+        &_count {
+            display : none;
+        }
+    }
+}

@@ -1,24 +1,34 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider , Outlet } from "react-router-dom"
 import Header from './components/components_allPages/Header.jsx'
 import PageError from './components/pages/PageError.jsx'
 import Apropos from './components/pages/Page_Apropos/Apropos.jsx'
-import LogementPage from "./components/pages/LogementPage.jsx"
-import Accueil from './components/pages/Page_Accueils/Accueil.jsx'
+import LogementPage from "./components/pages/Page_Logement/LogementPage.jsx"
+import Accueil from './components/pages/Page_Accueils/Accueil'
 
+function Layout() {
+  return (<>
+    <Header />
+    <Outlet />
+  </>)
+  
+}
 
 const router = createBrowserRouter ([
   {
     path : '/',
-    element : <>
-      <Header />
-    </>,
+    element : <Layout />,
     errorElement : <PageError/>,
-    children : [{
-      path : 'a-propos',
-      element : <div><Apropos/></div>
+    children : [
+    {
+      index : true, 
+      element : <Accueil />
     },
     {
-      path : ':id',
+      path : 'a-propos',
+      element : <Apropos/>
+    },
+    {
+      path : 'logement/:id',
       element : <LogementPage/>
     },
   ]
@@ -28,7 +38,6 @@ const router = createBrowserRouter ([
 function App() {
   return <>
   <RouterProvider router={router}/>
-  <Accueil />
   </>
 }
 
