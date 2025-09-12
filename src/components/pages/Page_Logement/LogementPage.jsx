@@ -2,7 +2,6 @@ import {useParams} from 'react-router-dom'
 import data from '../../../assets/logements.json'
 import TitleAndHost from './TitleAndHost.jsx'
 import DescriptionAndEquipements from './DescriptionAndEquipement.jsx'
-import Footer from '../../components_allPages/Footer.jsx'
 import Caroussel from './Caroussel.jsx'
 
 function LogementPage () {
@@ -22,7 +21,6 @@ function LogementPage () {
     <DescriptionAndEquipements 
         description={logement.description}
         equipements={logement.equipments}/>
-    <Footer />
     </>
 }
 
