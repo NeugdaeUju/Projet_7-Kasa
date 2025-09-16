@@ -1,5 +1,5 @@
 import '../../../styles/style_valeurs.scss'
-import Dropdown from './Dropdown.jsx'
+import Dropdown from '../../components_allPages/Dropdown'
 
 function Valeurs () {
     return <>
