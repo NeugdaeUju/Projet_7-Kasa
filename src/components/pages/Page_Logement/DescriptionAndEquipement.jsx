@@ -1,4 +1,4 @@
-import Dropdown from '../Page_Apropos/Dropdown.jsx'
+import Dropdown from '../../components_allPages/Dropdown'
 import '../../../styles/style_description-equipements.css'
 
 function DescriptionAndEquipements ({description, equipements}) {
