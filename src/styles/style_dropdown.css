@@ -14,10 +14,17 @@ a {
   width: 100%;
   margin-bottom: 30px;
 }
-.dropdown__button__title {
+.dropdown__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: #FF6060;
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
+  cursor: pointer;
+}
+.dropdown__button__title {
   color: white;
   font-size: 24px;
   font-weight: 700;

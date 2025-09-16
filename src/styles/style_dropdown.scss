@@ -5,10 +5,16 @@
     margin-bottom: 30px;
 
     &__button {
+        display : flex;
+        flex-direction : row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+        border-radius : 5px;
+        padding : 10px 20px 10px 15px;
+        cursor: pointer;
+
         &__title {
-            background-color: $primary-color;
-            border-radius : 5px;
-            padding : 10px 20px 10px 15px;
             color: white;  
             font-size: $Logement-pages-OpenList-size;
             font-weight: $Logement-pages-OpenList-weight;
