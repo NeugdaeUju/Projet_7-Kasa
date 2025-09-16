@@ -13,8 +13,10 @@
 }
 
 .dropdown {
+  &--logement{
     width: 48%;
-
+  }
+  
     &__button {
       &__text {
         font-size : $Logement-pages-ContentText-size;

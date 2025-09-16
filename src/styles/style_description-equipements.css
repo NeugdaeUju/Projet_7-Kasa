@@ -21,7 +21,7 @@ a {
   font-weight: 400;
 }
 
-.dropdown {
+.dropdown--logement {
   width: 48%;
 }
 .dropdown__button__text {

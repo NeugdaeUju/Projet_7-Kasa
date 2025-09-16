@@ -1,7 +1,7 @@
 import '../../styles/style_dropdown.css'
 import { useState } from 'react'
 
-function Dropdown ({title, content}) {
+function Dropdown ({title, content, page}) {
     const  [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = (e) => {
@@ -9,7 +9,7 @@ function Dropdown ({title, content}) {
         setIsOpen(prev => !prev);
     }
 
-    return <div className='dropdown'>
+    return <div className={`dropdown ${page === "logement" ? "dropdown--logement" : ""}`}>
         <details open={isOpen} className='dropdown__button'>
             <summary className='dropdown__button__title' onClick={toggleDropdown}>{title}</summary>
             <p className={`dropdown__button__text ${isOpen ? "dropdown__button__text--open" : "dropdown__button__text--close"}`}
