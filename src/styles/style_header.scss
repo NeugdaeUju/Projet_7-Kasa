@@ -18,6 +18,10 @@ header a {
     font-weight: $Header-weight;
 }
 
+.nav-link--actif {
+    text-decoration: underline;
+}
+
 @media (max-width : 1024px) {
     header {
         margin : 45px 50px;
