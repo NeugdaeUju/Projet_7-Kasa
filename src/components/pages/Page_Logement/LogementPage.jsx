@@ -10,7 +10,7 @@ function LogementPage () {
 
     return <>
     <Caroussel
-    pictures={logement.pictures}/>
+        pictures={logement.pictures}/>
     <TitleAndHost 
         title={logement.title}
         location={logement.location}

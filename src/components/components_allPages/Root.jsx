@@ -1,5 +1,4 @@
 // Création des routes de l'application
-
 import { NavLink } from "react-router-dom";
 
 function Root () {
@@ -14,7 +13,3 @@ function Root () {
 }
 
 export default Root
-
-// {`nav_link ${isActive ? "nav-link--actif" : "" }`}
-
-// {`header__nav__link ${isActive ? "header__nav__link--actif" : "" }`}

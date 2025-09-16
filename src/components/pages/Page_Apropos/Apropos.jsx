@@ -4,9 +4,9 @@ import image from '../../../assets/images/image_hero_2.jpg'
 
 function Apropos () {
     return <>
-    <Hero 
-    image={image}/>
-    <Valeurs />
+        <Hero 
+            image={image}/>
+        <Valeurs />
     </>
 }
 

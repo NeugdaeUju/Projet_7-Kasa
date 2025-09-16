@@ -5,8 +5,8 @@ import image from '../../../assets/images/image_hero.jpg'
 function Accueil () {
     return <>
         <Hero 
-        image={image}
-        title="Chez vous, partout et ailleurs"/>
+            image={image}
+            title="Chez vous, partout et ailleurs"/>
         <AllLogement/>
     </>
 }
