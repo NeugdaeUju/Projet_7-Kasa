@@ -6,7 +6,7 @@ function Logement ({cover, title, id}) {
     <article className="logement">
         <Link to={`/logement/${id}`}>
             <img src={cover} alt={title} className='logement__image'/>
-            <p>{title}</p>
+            <p className='logement__text'>{title}</p>
         </Link>
     </article>
     </>

@@ -11,17 +11,20 @@
         aspect-ratio: 1/1;
         border-radius : 16px;
     }
+
+    &__text {
+        font-size : $Logement-pages-log-size;
+        font-weight: $Logement-pages-loc-weight;
+        color : $white;
+        position : absolute;
+        margin : 20px;
+        bottom : 0px;
+        left: 0px;
+    }
 }
 
-.logement p {
-    font-size : $Logement-pages-log-size;
-    font-weight: $Logement-pages-loc-weight;
-    color : $white;
-    position : absolute;
-    margin : 20px;
-    bottom : 0px;
-    left: 0px;
-}
+
+// Responsive
 
 @media (max-width: 635px) {
     .logement {
@@ -42,9 +45,9 @@
         &__image {
             aspect-ratio: auto;
         }
-    }
-}
 
-.logement p {
-    margin : 15px;
+        &__text {
+            margin : 15px;
+        }
+    }
 }

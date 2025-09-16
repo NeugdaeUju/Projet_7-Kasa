@@ -11,9 +11,9 @@ function TitleAndHost ({title , location, hostName, hostPicture, tags = [], rati
                 <h2 className="title-and-host__title-div__title">{title}</h2>
                 <h3 className="title-and-host__title-div__loc">{location}</h3>
                 <div className='tags-and-rating__tags-div'>
-                {tags.map((tag, i) => (
-                    <p key={i} className='tags-and-rating__tags-div__tag'>{tag}</p>
-                ))}
+                    {tags.map((tag, i) => (
+                        <p key={i} className='tags-and-rating__tags-div__tag'>{tag}</p>
+                    ))}
             </div>
             </div>
             <div className="title-and-host__host-div">
@@ -22,17 +22,16 @@ function TitleAndHost ({title , location, hostName, hostPicture, tags = [], rati
                     <img className="title-and-host__host-div__host__image" src={hostPicture} alt="image"></img>
                 </div>
                 <div className ='tags-and-rating__rating-div'>
-                {[...Array(5)].map((star, i) => (
-                     <FontAwesomeIcon 
-                    key={i}
-                    icon={faStar} 
-                    className ={
-                        'tags-and-rating__rating-div__rating ' +
-                        (i < rating ? 'tags-and-rating__rating-div__rating--filled' : 'tags-and-rating__rating-div__rating--empty' )}
-                    />
-                ))}
-               
-            </div>
+                    {[...Array(5)].map((star, i) => (
+                        <FontAwesomeIcon 
+                        key={i}
+                        icon={faStar} 
+                        className ={
+                            'tags-and-rating__rating-div__rating ' +
+                            (i < rating ? 'tags-and-rating__rating-div__rating--filled' : 'tags-and-rating__rating-div__rating--empty' )}
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     </>

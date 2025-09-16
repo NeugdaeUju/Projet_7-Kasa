@@ -21,7 +21,7 @@ a {
   font-weight: 400;
 }
 
-.dropdown {
+.dropdown--logement {
   width: 48%;
 }
 .dropdown__button__text {
@@ -57,7 +57,7 @@ a {
   .description-equipements__items {
     margin-bottom: 5px;
   }
-  .dropdown {
+  .dropdown--logement {
     width: 100%;
   }
   .dropdown__button__title {
@@ -76,7 +76,7 @@ a {
     flex-direction: column;
     align-items: center;
   }
-  .dropdown {
+  .dropdown--logement {
     width: 100%;
   }
   .dropdown__button__title {

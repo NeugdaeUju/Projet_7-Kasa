@@ -1,10 +1,12 @@
-import HeroAP from './HeroAP.jsx'
+import Hero from '../../components_allPages/Hero.jsx'
 import Valeurs from './Valeurs.jsx'
+import image from '../../../assets/images/image_hero_2.jpg'
 
 function Apropos () {
     return <>
-    <HeroAP />
-    <Valeurs />
+        <Hero 
+            image={image}/>
+        <Valeurs />
     </>
 }
 

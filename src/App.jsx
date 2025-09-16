@@ -6,15 +6,6 @@ import LogementPage from "./components/pages/Page_Logement/LogementPage.jsx"
 import Accueil from './components/pages/Page_Accueils/Accueil'
 import Footer from './components/components_allPages/Footer.jsx'
 
-function Layout() {
-  return (<>
-    <Header />
-    <Outlet />
-  </>)
-  
-}
-
-
 function App() {
   return <>
   <BrowserRouter>

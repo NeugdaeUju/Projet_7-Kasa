@@ -1,38 +1,41 @@
 @import 'style.scss';
 
-footer {
+.footer {
     display : flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
     color : white;
+
+    &__image {
+        padding-bottom : 29px;
+        padding-top : 66px;
+    }
+
+    &__text {
+        font-size: $Header-size;
+        font-weight: $Header-weight;
+        padding-bottom : 29px;
+    }
 }
 
-footer img {
-    padding-bottom : 29px;
-    padding-top : 66px;
-}
-
-footer p {
-    font-size: $Header-size;
-    font-weight: $Header-weight;
-    padding-bottom : 29px;
-}
+// Responsive
 
 @media (max-width : 480px) {
+    .footer{
+        &__image {
+            height : 40px;
+            padding-top : 66px;
+            padding-bottom : 10px;
+        }
 
-    footer img {
-        height : 40px;
-        padding-top : 66px;
-        padding-bottom : 10px;
-    }
-
-    footer p {
-        font-size : $Header-size-mobile;
-        font-weight: $Header-weight-mobile;
-        padding-bottom: 58px;
-        width : 134px;
-        text-align: center;
-    }
+        &__text {
+            font-size : $Header-size-mobile;
+            font-weight: $Header-weight-mobile;
+            padding-bottom: 5px;
+            width : 134px;
+            text-align: center;
+        }
+    } 
 }
