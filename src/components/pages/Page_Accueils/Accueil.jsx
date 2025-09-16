@@ -1,4 +1,4 @@
-import Hero from './Hero.jsx'
+import Hero from '../../components_allPages/Hero.jsx'
 import AllLogement from './AllLogements.jsx'
 import image from '../../../assets/images/image_hero.jpg'
 

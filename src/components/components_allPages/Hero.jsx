@@ -1,4 +1,4 @@
-import '../../../styles/style_hero.css'
+import '../../styles/style_hero.css'
 
 function Hero ({title, image}) {
     return <div className='hero'>
