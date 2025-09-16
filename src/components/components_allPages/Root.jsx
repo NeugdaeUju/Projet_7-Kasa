@@ -4,13 +4,17 @@ import { NavLink } from "react-router-dom";
 
 function Root () {
     return <>
-        <nav>
+        <nav className="header__nav">
             <NavLink to='/'
-            className={({isActive}) => isActive ? "nav-link--actif" : "nav-link"}>Accueil</NavLink>
+            className="header__nav__link">Accueil</NavLink>
             <NavLink to='/a-propos'
-            className={({isActive}) => isActive ? "nav-link--actif" : "nav-link"}>A Propos</NavLink>
+            className="header__nav__link">A Propos</NavLink>
         </nav>
     </>
 }
 
 export default Root
+
+// {`nav_link ${isActive ? "nav-link--actif" : "" }`}
+
+// {`header__nav__link ${isActive ? "header__nav__link--actif" : "" }`}

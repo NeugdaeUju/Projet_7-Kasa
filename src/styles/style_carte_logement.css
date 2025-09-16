@@ -22,8 +22,7 @@ a {
   aspect-ratio: 1/1;
   border-radius: 16px;
 }
-
-.logement p {
+.logement__text {
   font-size: 18px;
   font-weight: 500;
   color: white;
@@ -50,7 +49,7 @@ a {
   .logement__image {
     aspect-ratio: auto;
   }
-}
-.logement p {
-  margin: 15px;
+  .logement__text {
+    margin: 15px;
+  }
 }/*# sourceMappingURL=style_carte_logement.css.map */

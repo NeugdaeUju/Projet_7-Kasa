@@ -95,6 +95,8 @@
     }
 }
 
+// Responsive
+
 @media (max-width : 1024px) {
     .title-and-host {
         margin : 20px 50px;
@@ -149,7 +151,6 @@
     }
 
     .tags-and-rating {
-
         &__tags-div {
             flex-wrap : wrap;
             &__tag {

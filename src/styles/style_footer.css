@@ -10,7 +10,7 @@ a {
   font-family: "Montserrat";
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,28 +18,26 @@ footer {
   background-color: black;
   color: white;
 }
-
-footer img {
+.footer__image {
   padding-bottom: 29px;
   padding-top: 66px;
 }
-
-footer p {
+.footer__text {
   font-size: 24px;
   font-weight: 500;
   padding-bottom: 29px;
 }
 
 @media (max-width: 480px) {
-  footer img {
+  .footer__image {
     height: 40px;
     padding-top: 66px;
     padding-bottom: 10px;
   }
-  footer p {
+  .footer__text {
     font-size: 12px;
     font-weight: 500;
-    padding-bottom: 58px;
+    padding-bottom: 5px;
     width: 134px;
     text-align: center;
   }

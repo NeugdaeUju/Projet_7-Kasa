@@ -4,8 +4,8 @@ import '../../styles/style_header.css'
 
 function Header () {
     return <>
-        <header>
-            <img src={logo} alt='Logo Kasa'></img>
+        <header className='header'>
+            <img src={logo} alt='Logo Kasa' className='header__image'></img>
             <Root />
         </header>
     </>
