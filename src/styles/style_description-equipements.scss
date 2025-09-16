@@ -16,7 +16,7 @@
   &--logement{
     width: 48%;
   }
-  
+
     &__button {
       &__text {
         font-size : $Logement-pages-ContentText-size;
@@ -64,7 +64,9 @@
     }
 
     .dropdown {
+      &--logement {
         width: 100%;
+      }
 
         &__button__title {
           font-size : 16px;
@@ -89,7 +91,10 @@
     }
 
     .dropdown {
+      &--logement {
         width: 100%;
+      }
+        
 
         &__button__title {
           font-size : $Logement-pages-OpenList-size-mobile;
