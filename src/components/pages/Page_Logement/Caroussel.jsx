@@ -18,12 +18,18 @@ function Caroussel({pictures = []}) {
 
     return <>
         <div className='caroussel'>
-            <img src={arrowLeft} alt='left arrow' className='caroussel_arrow-left' onClick={togoPrevious}/>
-            <img src={arrowRight} alt='right arrow' className='caroussel_arrow-right'  onClick={togoNext}/>
+            { length >1 && (
+                <img src={arrowLeft} alt='left arrow' className='caroussel_arrow-left' onClick={togoPrevious}/>
+                )}
+            { length >1 && (
+                <img src={arrowRight} alt='right arrow' className='caroussel_arrow-right'  onClick={togoNext}/>
+                )}
             <img src={pictures[current]} alt="logement" className='caroussel-image'/>
+            { length >1 && (
             <div className='caroussel_count'>
                 <p>{current + 1}/{length}</p>
             </div>
+            )}
         </div>
     
     </>
