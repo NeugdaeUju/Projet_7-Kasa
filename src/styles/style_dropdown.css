@@ -23,15 +23,15 @@ a {
   border-radius: 5px;
   padding: 10px 20px 10px 15px;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 .dropdown__button__title {
   color: white;
   font-size: 24px;
   font-weight: 700;
-  z-index: 9999;
-  position: relative;
 }
-.dropdown__button__text {
+.dropdown__text {
   background-color: #F6F6F6;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -39,14 +39,21 @@ a {
   color: black;
   font-size: 18px;
   font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 
-.dropdown__button[open] .dropdown__button__text--open {
-  animation: slideDown 0.4s ease forwards;
+.dropdown__text--open + .dropdown__text {
+  animation: slideDown 0.4s forwards;
+  opacity: 1;
+  max-height: 500px;
 }
 
-.dropdown__button:not([close]) .dropdown__button__text--close {
-  animation: slideUp 0.4s ease forwards;
+.dropdown__text--close + .dropdown__text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s, opacity 0.4s;
 }
 
 @keyframes slideDown {
@@ -57,16 +64,6 @@ a {
   to {
     transform: translateY(0);
     opacity: 1;
-  }
-}
-@keyframes slideUp {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-10px);
-    opacity: 0;
   }
 }
 @media (max-width: 834px) {
@@ -81,7 +78,7 @@ a {
   .dropdown__button__title {
     font-size: 13px;
   }
-  .dropdown__button__text {
+  .dropdown__text, .dropdown li {
     font-size: 12px;
   }
 }/*# sourceMappingURL=style_dropdown.css.map */
