@@ -36,6 +36,8 @@
         }
 }
 
+// Animation à l'ouverture /fermeture sur les textes
+
 .dropdown__text--open + .dropdown__text {
     animation : slideDown 0.4s forwards;
     opacity : 1;
@@ -61,9 +63,17 @@
     }
 }
 
+// Animation à l'ouverture / fermeture sur la flèche
 
+.dropdown__text--open > .dropdown__button__image {
+    transform : rotate(-180deg);
+    transition : transform 0.4s;
+}
 
-
+.dropdown__text--close > .dropdown__button__image {
+    transform : rotate(-0deg);
+    transition : transform 0.4s;
+}
 
 @media (max-width: 834px) {
     .dropdown {

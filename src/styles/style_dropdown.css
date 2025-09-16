@@ -66,6 +66,16 @@ a {
     opacity: 1;
   }
 }
+.dropdown__text--open > .dropdown__button__image {
+  transform: rotate(-180deg);
+  transition: transform 0.4s;
+}
+
+.dropdown__text--close > .dropdown__button__image {
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+}
+
 @media (max-width: 834px) {
   .dropdown {
     margin-bottom: 20px;
