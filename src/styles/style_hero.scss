@@ -30,26 +30,26 @@
 @media (max-width : 1024px) {
     .hero { 
         margin : 5px 50px 43px 50px;
-    }
 
-    .hero p {
-        padding : 20px;
+        &__text {
+            padding : 20px;
+        }
     }
 }
 
 @media (max-width: 834px) {
     .hero { 
       margin : 0 30px 25px 30px;
-      height : 180px;  
-    }
+      height : 180px;
 
-    .hero p { 
+      &__text {
         font-size : 36px;
+      }
     }
 }
 
 @media (max-width : 635px) {
-    .hero p { 
+    .hero__text { 
         padding-left : 20px;
     }
 }
@@ -60,13 +60,13 @@
         margin : 0 20px;
         margin-bottom: 22px;
         align-items: start;
-    }
 
-    .hero p {
-        font-size: $Title-size-mobile;
-        font-weight : $Title-weight-mobile;
-        display: flex;
-        justify-content: center;
-        padding-left : 16px;
+        &__text {
+            font-size: $Title-size-mobile;
+            font-weight : $Title-weight-mobile;
+            display: flex;
+            justify-content: center;
+            padding-left : 16px;
+        }
     }
 }

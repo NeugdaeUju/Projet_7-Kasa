@@ -23,17 +23,17 @@
         }
     }
 
-            &__text {
-            background-color: $grey;
-            border-bottom-left-radius : 5px;
-            border-bottom-right-radius : 5px;
-            padding : 10px 20px 10px 15px;
-            color: $black;  
-            font-size: $Logement-pages-ContentText-size;
-            font-weight: $Logement-pages-ContentText-weight;
-            position : relative;
-            z-index: 1;
-        }
+    &__text {
+        background-color: $grey;
+        border-bottom-left-radius : 5px;
+        border-bottom-right-radius : 5px;
+        padding : 10px 20px 10px 15px;
+        color: $black;  
+        font-size: $Logement-pages-ContentText-size;
+        font-weight: $Logement-pages-ContentText-weight;
+        position : relative;
+        z-index: 1;
+    }
 }
 
 // Animation à l'ouverture /fermeture sur les textes
@@ -92,7 +92,6 @@
             &__title {
                 font-size: $Logement-pages-OpenList-size-mobile;
             }
-
         }
 
         &__text , li{

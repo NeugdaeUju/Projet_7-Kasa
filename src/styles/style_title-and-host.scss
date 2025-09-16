@@ -153,6 +153,7 @@
     .tags-and-rating {
         &__tags-div {
             flex-wrap : wrap;
+
             &__tag {
                 font-size : 12px;
                 width : auto;
@@ -207,7 +208,7 @@
 
                 &__image {
                     height : 32px;
-                width : 32px;
+                    width : 32px;
                 }
             }
 
@@ -218,6 +219,7 @@
 
         &__tags-div {
             flex-wrap : wrap;
+
             &__tag {
                 font-size :10px;
                 width : auto;
@@ -229,9 +231,9 @@
             margin-top : 0px;
 
             &__rating {
-            font-size : 13px;
-            margin-right: 5px;
-            margin-left : 0;
+                font-size : 13px;
+                margin-right: 5px;
+                margin-left : 0;
             }
         }
     }

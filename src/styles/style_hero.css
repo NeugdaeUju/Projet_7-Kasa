@@ -38,7 +38,7 @@ a {
   .hero {
     margin: 5px 50px 43px 50px;
   }
-  .hero p {
+  .hero__text {
     padding: 20px;
   }
 }
@@ -47,12 +47,12 @@ a {
     margin: 0 30px 25px 30px;
     height: 180px;
   }
-  .hero p {
+  .hero__text {
     font-size: 36px;
   }
 }
 @media (max-width: 635px) {
-  .hero p {
+  .hero__text {
     padding-left: 20px;
   }
 }
@@ -63,7 +63,7 @@ a {
     margin-bottom: 22px;
     align-items: start;
   }
-  .hero p {
+  .hero__text {
     font-size: 24px;
     font-weight: 700;
     display: flex;
