@@ -1,9 +1,12 @@
 import Hero from './Hero.jsx'
 import AllLogement from './AllLogements.jsx'
+import image from '../../../assets/images/image_hero.jpg'
 
 function Accueil () {
     return <>
-        <Hero />
+        <Hero 
+        image={image}
+        title="Chez vous, partout et ailleurs"/>
         <AllLogement/>
     </>
 }

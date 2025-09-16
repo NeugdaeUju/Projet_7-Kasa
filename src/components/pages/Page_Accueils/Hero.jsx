@@ -1,10 +1,9 @@
-import image from '../../../assets/images/image_hero.jpg'
 import '../../../styles/style_hero.css'
 
-function Hero () {
+function Hero ({title, image}) {
     return <div className='hero'>
         <img src={image} alt="Image d'illustration"/>
-        <p>Chez vous, partout et ailleurs</p>
+        <p>{title}</p>
     </div>
 }
 
