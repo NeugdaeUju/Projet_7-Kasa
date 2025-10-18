@@ -10,7 +10,7 @@ function LogementPage () {
 
     // Si l'ID ne correspond à aucun logement => redirection page 404
     if (!logement) {
-        return <Navigate to="/PageError" replace/>
+        return <Navigate to="/404" replace/>
     }
 
     return <>
