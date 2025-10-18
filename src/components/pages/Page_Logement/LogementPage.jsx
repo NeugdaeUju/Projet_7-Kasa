@@ -1,4 +1,4 @@
-import {useParams} from 'react-router-dom'
+import {Navigate, useParams} from 'react-router-dom'
 import data from '../../../assets/logements.json'
 import TitleAndHost from './TitleAndHost.jsx'
 import DescriptionAndEquipements from './DescriptionAndEquipement.jsx'
@@ -7,6 +7,11 @@ import Caroussel from './Caroussel.jsx'
 function LogementPage () {
     const { id } = useParams()
     const logement = data.find(logement => logement.id === id)
+
+    // Si l'ID ne correspond à aucun logement => redirection page 404
+    if (!logement) {
+        return <Navigate to="/PageError" replace/>
+    }
 
     return <>
     <Caroussel
