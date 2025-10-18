@@ -1,5 +1,5 @@
 import Dropdown from '../../components_allPages/Dropdown'
-import '../../../styles/style_description-equipements.css'
+import '../../../styles/style_description-equipements.scss'
 
 function DescriptionAndEquipements ({description, equipements}) {
     return <>

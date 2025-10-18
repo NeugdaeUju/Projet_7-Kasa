@@ -1,4 +1,4 @@
-import '../../../styles/style_accueil_logement.css'
+import '../../../styles/style_accueil_logement.scss'
 import Logement from './Logements.jsx'
 import logementListe from '../../../assets/logements.json'
 

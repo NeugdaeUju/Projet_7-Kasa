@@ -1,5 +1,5 @@
 import logoBlackWhite from '../../assets/images/LOGO-BlackWhite.svg'
-import '../../styles/style_footer.css'
+import '../../styles/style_footer.scss'
 
 function Footer () {
     return <>

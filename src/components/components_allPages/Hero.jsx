@@ -1,4 +1,4 @@
-import '../../styles/style_hero.css'
+import '../../styles/style_hero.scss'
 
 function Hero ({title, image}) {
     return <>

@@ -1,4 +1,4 @@
-import '../../../styles/style_carte_logement.css'
+import '../../../styles/style_carte_logement.scss'
 import { Link } from 'react-router-dom'
 
 function Logement ({cover, title, id}) {

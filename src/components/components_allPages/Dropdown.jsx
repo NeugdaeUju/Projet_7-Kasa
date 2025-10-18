@@ -1,4 +1,4 @@
-import '../../styles/style_dropdown.css'
+import '../../styles/style_dropdown.scss'
 import { useState } from 'react'
 import image from '../../assets/images/arrow_dropdown.png'
 

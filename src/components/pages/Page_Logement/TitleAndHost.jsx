@@ -1,4 +1,4 @@
-import '../../../styles/style_title-and-host.css'
+import '../../../styles/style_title-and-host.scss'
 
 // Import des icons de rating
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
