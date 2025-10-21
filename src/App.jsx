@@ -14,7 +14,6 @@ function App() {
       <Route path="/" element={<Accueil />} />
       <Route path="a-propos" element={<Apropos />} />
       <Route path="logement/:id" element={<LogementPage />} />
-      <Route path="/404" element={<PageError />} />
       <Route path="*" element={<PageError />} />
     </Routes>
     <Footer />
