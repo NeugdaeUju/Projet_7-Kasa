@@ -1,8 +1,6 @@
-import '../../../styles/style_title-and-host.css'
-
-// Import des icons de rating
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import '../../../styles/style_title-and-host.scss'
+import starFull from '../../../assets/images/star-full.svg'
+import starEmpty from '../../../assets/images/star-empty.svg'
 
 function TitleAndHost ({title , location, hostName, hostPicture, tags = [], rating = 0}) {
     return<>
@@ -23,9 +21,10 @@ function TitleAndHost ({title , location, hostName, hostPicture, tags = [], rati
                 </div>
                 <div className ='tags-and-rating__rating-div'>
                     {[...Array(5)].map((star, i) => (
-                        <FontAwesomeIcon 
+                        <img
                         key={i}
-                        icon={faStar} 
+                        src={i < rating ? starFull : starEmpty} 
+                        alt={i < rating ? "etoile pleine" : "étoile vide"}
                         className ={
                             'tags-and-rating__rating-div__rating ' +
                             (i < rating ? 'tags-and-rating__rating-div__rating--filled' : 'tags-and-rating__rating-div__rating--empty' )}

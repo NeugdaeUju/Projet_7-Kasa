@@ -3,14 +3,26 @@
 .logement {
     width : 100%;
     position : relative;
-    aspect-ratio: 1 /1;
+    aspect-ratio: 1/1;
 
-    &__image {
+    &__image::after {
+        content: "";
+        position : absolute;
+        inset : 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+        pointer-events: none;
+        z-index : 1;
+        border-radius : 16px;
+        aspect-ratio : 1/1
+    }
+
+    &__image__img{
         object-fit: cover;
         width :100%;
         aspect-ratio: 1/1;
         border-radius : 16px;
     }
+   
 
     &__text {
         font-size : $Logement-pages-log-size;
@@ -20,9 +32,9 @@
         margin : 20px;
         bottom : 0px;
         left: 0px;
+        z-index : 3;
     }
 }
-
 
 // Responsive
 
@@ -31,7 +43,12 @@
         aspect-ratio: auto;
         height : 225px;
 
-        &__image {
+        &__image::after {
+            height : 225px;
+            width : 100%
+        }
+
+        &__image__img {
             aspect-ratio: auto;
             height : 225px;
         }

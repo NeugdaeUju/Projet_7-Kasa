@@ -1,6 +1,6 @@
 import Root from '../components_allPages/Root.jsx'
 import logo from '../../assets/images/LOGO.svg'
-import '../../styles/style_header.css'
+import '../../styles/style_header.scss'
 
 function Header () {
     return <>

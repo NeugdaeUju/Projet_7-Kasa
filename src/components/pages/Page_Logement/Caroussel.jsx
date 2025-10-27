@@ -1,4 +1,4 @@
-import '../../../styles/style_caroussel.css'
+import '../../../styles/style_caroussel.scss'
 import arrowLeft from '../../../assets/images/arrow_left.png'
 import arrowRight from '../../../assets/images/arrow_right.png'
 import {useState} from 'react'
